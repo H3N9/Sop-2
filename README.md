@@ -22,3 +22,9 @@ This pattern will solve about request from client or users who send request some
 When many requests has sent to server, it may make server down.  
 Object Pool organize users for use somthing and reduce traffic on network.  
 
+### Functional Programming
+There are 2 types, first is Pure function and the last is Impure function. so what is it?  
+- Pure Function is function that has less 1 parameter.  
+It's function that doesn't involve environment. What is that mean?
+It means when you assign some input to pure function, it has to send output same value that you expect.  
+- Impure Function is everything that do right now.  
