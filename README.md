@@ -18,6 +18,10 @@ And you have to create some method to clone it, so when you want to clone some o
 espectially for Java, there is Clone method to clone someting, you just import to your class that you want to clone it.  
 
 ### Object Pool
+an Object pool is a container which contains a specified amount of objects. 
+When an object is taken from the pool, it is not available in the pool until it is put back. 
+Objects in the pool have a lifecycle: creation, validation and destroy.
+
 Most of this pattern, it'll use on Client-Server or somthing that has many request.  
 This pattern will solve about request from client or users who send request something.  
 When many requests has sent to server, it may make server down.  
