@@ -15,3 +15,10 @@ When you want to clone something from some object, but you don't know how to ass
 This pattern will solve this problem, so how does it work? you have to create interface cover all of class that you want.  
 And you have to create some method to clone it, so when you want to clone some object you can create new object and call that method.  
 espectially for Java, there is Clone method to clone someting, you just import to your class that you want to clone it.  
+
+### Object Pool
+Most of this pattern, it'll use on Client-Server or somthing that has many request.  
+This pattern will solve about request from client or users who send request something.  
+When many requests has sent to server, it may make server down.  
+Object Pool organize users for use somthing and reduce traffic on network.  
+
