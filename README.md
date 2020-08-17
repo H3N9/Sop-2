@@ -11,6 +11,7 @@ It sets some method to be public static for create constructor. after that when 
 
 
 ### Phototype
-When you want to clone something from some object, but you don't know how to assign attribute.   
+When you want to clone something from some object, but you don't know how to assign attribute or do the same thing for many times.   
 This pattern will solve this problem, so how does it work? you have to create interface cover all of class that you want.  
 And you have to create some method to clone it, so when you want to clone some object you can create new object and call that method.  
+espectially for Java, there is Clone method to clone someting, you just import to your class that you want to clone it.  
