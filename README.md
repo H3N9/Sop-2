@@ -4,6 +4,7 @@
 
 
 ## Creatational Design Pattern
+The basic form of object creation could result in design problems or in added complexity to the design, which increase flexibility and reuse of existing code.
 ### Singleton
 It's pattern that you can create only one object. how does it work?  
 It will set private constructor on the class and create unique attribute for checking.  
