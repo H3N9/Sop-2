@@ -3,7 +3,7 @@
 ## What is Anti-pattern?
 
 
-## Creatation Design Pattern
+## Creatational Design Pattern
 ### Singleton
 It's pattern that you can create only one object. how does it work?  
 It will set private constructor on the class and create unique attribute for checking.  
@@ -27,4 +27,5 @@ There are 2 types, first is Pure function and the last is Impure function. so wh
 - Pure Function is function that has less 1 parameter.  
 It's function that doesn't involve environment. What is that mean?
 It means when you assign some input to pure function, it has to send output same value that you expect.  
-- Impure Function is everything that do right now.  
+- Impure Function is oppsite from Pure Function.  
+It invovles environment. It's function that use global variable. It can't do test when you do like that.  
