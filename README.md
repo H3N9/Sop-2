@@ -1,6 +1,7 @@
 # Sop-2
 
 ## What is Anti-pattern?
+Anti pattern is a type of software development, which is opposite to design patterns that have no problem-solving patterns like design patterns. anti pattern is appropriate for jobs that are not complex.
 
 
 ## Creatational Design Pattern
