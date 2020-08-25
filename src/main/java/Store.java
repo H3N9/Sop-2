@@ -36,7 +36,7 @@ public class Store {
 	}
 	
 	public void setBook(Book book) {
-		books.put(books.size()+1+"", book);
+		books.put(book.getId(), book);
 	}
 	
 	public int size() {
@@ -59,5 +59,8 @@ public class Store {
 		return books;
 	}
 	
+	public String toString() {
+		return books.toString();
+	}
 	
 }

@@ -8,9 +8,9 @@ public class CopyBook {
 	}
 	
 	
-	public Book cloneBook(String name) {
-		if(store.getBooks().containsKey(name)) {
-			Book proBook = (Book)store.getBooks().get(name);
+	public Book cloneBook(String id) {
+		if(store.getBooks().containsKey(id)) {
+			Book proBook = (Book)store.getBooks().get(id);
 			return (Book) proBook.clone();
 		}
 		return null;

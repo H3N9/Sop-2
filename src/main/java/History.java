@@ -12,5 +12,10 @@ public class History extends Book{
 		// TODO Auto-generated method stub
 		return type;
 	}
+	@Override
+	public Book clone() {
+		// TODO Auto-generated method stub
+		return new History(this.title, this.author);
+	}
 
 }

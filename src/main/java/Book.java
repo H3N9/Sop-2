@@ -1,19 +1,23 @@
 
 
-public abstract class Book implements Cloneable{
-	private String author;
-	private String title;
+public abstract class Book{
+	protected String author;
+	private String id;
+	protected String title;
+	private static int count=0;
 	protected String type;
 	
 	
-	public Book(String name, String author) {
-		this.title = name;
+	public Book(String title, String author) {
+		this.title = title;
 		this.author = author;
+		this.id = (++count)+"";
 	}
 	
 	
 	
-	public Object clone() {
+	public abstract Book clone();
+		/*
 		Object clone = null;
 	      
 	      try {
@@ -24,7 +28,7 @@ public abstract class Book implements Cloneable{
 	      }
 	      
 	      return clone;
-	  }
+	      */
 
 
 
@@ -46,8 +50,10 @@ public abstract class Book implements Cloneable{
 	public String getAuthor() {
 		return author;
 	}
-
-
+	
+	public String getId() {
+		return this.id;
+	}
 
 
 	public void setAuthor(String author) {

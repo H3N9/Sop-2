@@ -11,4 +11,11 @@ public class Fantacy extends Book{
 		return type;
 	}
 
+
+	@Override
+	public Book clone() {
+		// TODO Auto-generated method stub
+		return new Fantacy(this.title, this.author);
+	}
+
 }
