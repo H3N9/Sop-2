@@ -62,5 +62,4 @@ public class Store {
 	public String toString() {
 		return books.toString();
 	}
-	
 }

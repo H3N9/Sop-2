@@ -64,6 +64,10 @@ public abstract class Book{
 		return this.title;
 	}
 	
+	public String info() {
+		return "id: "+this.id+"\ntype: "+this.type+"\ntitle: "+this.title+"\nauthor: "+this.author;
+	}
+	
 	public abstract String getType();
 	
 }
