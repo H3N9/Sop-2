@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        const api = async () => {
+            const req = await fetch('http://localhost:8761/eureka/apps/',{
+                method: 'GET',
+                headers:{
+                    Accept:'application/json',
+                    "Content-Type":'application/json',
+                }
+            })
+            const res = await req.json()
+            return res
+        }
+
+        console.log(api())
+    </script>
+</body>
+</html>
