@@ -34,4 +34,8 @@ There are 2 types, first is Pure function and the last is Impure function. so wh
 It's function that doesn't involve environment. What is that mean?
 It means when you assign some input to pure function, it has to send output same value that you expect.  
 - Impure Function is oppsite from Pure Function.  
-It invovles environment. It's function that use global variable. It can't do test when you do like that.  
+It invovles environment. It's function that use global variable. It can't do test when you do like that. 
+
+
+
+# LAB Service Discovery
