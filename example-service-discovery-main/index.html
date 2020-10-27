@@ -6,8 +6,7 @@
 </head>
 <body>
     <script>
-
-
+        const table = document.createElement("table");
         const api = async () => {
             const req = await fetch('http://localhost:8761/eureka/apps/',{
                 method: 'GET',
@@ -16,11 +15,27 @@
                     "Content-Type":'application/json',
                 }
             })
+            table.innerHTML = ""
             const res = await req.json()
-            return res
+            
+            for(let i = 0;i<res.applications.application.length;i++){
+                let text = document.createTextNode(res.applications.application[i].name)
+                let tr = document.createElement("tr");
+                let td = document.createElement("td");
+                td.appendChild(text)
+                tr.appendChild(td)
+                table.appendChild(tr)
+            }
+            document.body.appendChild(table)
+            //console.log(table.childNodes)
         }
 
-        console.log(api())
+        const offlineCheck = () =>{
+            api()
+        };
+
+        //setInterval(offlineCheck, 1000);
+        api()
     </script>
 </body>
 </html>
