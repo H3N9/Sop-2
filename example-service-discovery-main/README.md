@@ -5,4 +5,11 @@
  ![Screen](https://raw.githubusercontent.com/H3N9/Sop-2/master/example-service-discovery-main/Capture.PNG)
  รูปแสดง service ตอน down service นั้นจะหายไป
  ![Screen2](https://raw.githubusercontent.com/H3N9/Sop-2/master/example-service-discovery-main/evaluation.PNG)
+ 
+ ## Service
+ - Student
+ - Teacher
+ - Course
+ - Evaluation
+ - Grade
 ### อเนก group
