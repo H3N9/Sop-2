@@ -15,16 +15,27 @@
                     "Content-Type":'application/json',
                 }
             })
-            table.innerHTML = ""
             const res = await req.json()
+            table.innerHTML = ""
             
             for(let i = 0;i<res.applications.application.length;i++){
-                let text = document.createTextNode(res.applications.application[i].name)
-                let tr = document.createElement("tr");
-                let td = document.createElement("td");
-                td.appendChild(text)
-                tr.appendChild(td)
-                table.appendChild(tr)
+                let path = res.applications.application[i].instance[0].statusPageUrl
+                let response = await fetch(path).catch((err) => err)
+                console.log(response)
+                if(response.status === 200){
+                    let text = document.createTextNode(res.applications.application[i].name)
+                    let a = document.createElement("a");
+                    a.setAttribute("href", path)
+                    a.appendChild(text)
+                    let tr = document.createElement("tr");
+                    let td = document.createElement("td");
+                    td.appendChild(a)
+                    tr.appendChild(td)
+                    table.appendChild(tr)
+                }
+                
+
+
             }
             document.body.appendChild(table)
             //console.log(table.childNodes)
@@ -34,7 +45,7 @@
             api()
         };
 
-        //setInterval(offlineCheck, 5000);
+        //setInterval(offlineCheck, 1000);
         api()
     </script>
 </body>
